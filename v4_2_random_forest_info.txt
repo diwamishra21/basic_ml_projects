@@ -1,0 +1,57 @@
+Objective:
+The goal of this project is to build a predictive model that helps identify whether a vehicle is likely to be exchanged (or not) based on various features like vehicle condition, customer engagement, trade-in history, and more. This is important for automotive sales, marketing campaigns, or customer retention strategies.
+
+Data:
+The data used for training consists of multiple features, including:
+
+vehicle_condition_score: A score representing the condition of the vehicle.
+
+trade_in_history: Whether the vehicle has a history of trade-ins (binary).
+
+incentive_received: Whether the customer received an incentive (binary).
+
+mileage: The mileage of the vehicle.
+
+customer_engagement_score: A score indicating how engaged the customer is.
+
+engineered features like engagement_to_age_ratio, which is a combination of customer engagement and vehicle age.
+
+Modeling Approach:
+Feature Engineering:
+
+New features like engagement_to_age_ratio were added to provide more meaningful insights to the model.
+
+Features were selected based on their importance, and only the top-performing features were used for training.
+
+Model Selection:
+
+Random Forest Classifier was chosen for its robustness and ability to handle both numerical and categorical data. It also provides feature importance metrics, which help identify which factors are most influential in making predictions.
+
+Handling Class Imbalance:
+
+Due to the imbalance between the two classes (exchange vs. no exchange), techniques like class_weight='balanced' were used to give more weight to the minority class (Class 1).
+
+Performance Metrics:
+
+The model’s performance was evaluated using a Classification Report and Confusion Matrix.
+
+Precision, recall, and F1-scores for both classes (0 and 1) were considered. The model achieved an overall accuracy of 90%, with a balanced F1-score for both classes.
+
+Key Findings:
+Vehicle Condition and Trade-in History emerged as the most important features, influencing the model's decision-making process.
+
+The model performed well in predicting Class 0 (no exchange) but showed room for improvement in predicting Class 1 (exchange).
+
+Class imbalance was successfully managed by applying class weights in the Random Forest model.
+
+Next Steps for Improvement:
+Model Tuning: Hyperparameter tuning (e.g., adjusting the number of trees in Random Forest) could improve performance.
+
+SMOTE: Implementing SMOTE (Synthetic Minority Over-sampling Technique) to oversample the minority class and help balance the dataset further.
+
+Exploring Other Models: Trying advanced models like Gradient Boosting or XGBoost could improve predictive performance, especially in identifying the minority class.
+
+Cross-Validation: Using cross-validation to assess the model's generalizability to unseen data.
+
+Conclusion:
+This POC demonstrates a robust predictive model for determining vehicle exchange likelihood based on customer and vehicle attributes. The model performs well with 90% accuracy and can be further enhanced by tuning and adding more advanced techniques. This model can be applied in real-world applications like automotive sales, marketing, and customer retention.
