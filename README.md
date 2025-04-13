@@ -35,3 +35,14 @@ Before running the notebook, make sure the following tools/libraries are availab
    ```bash
    git clone https://github.com/your-username/your-repo-name.git
    cd your-repo-name
+
+
+##🧠 What You'll Learn
+- How to train an XGBoost classifier
+- Simple feature engineering techniques
+- Evaluating model performance using confusion matrix and classification report
+- Visualizing feature importance
+- (Optionally) Saving model and predictions to AWS S3
+
+### Happy coding Guys!!!
+### I love Coding, Bowling, Cooking and Writing other than this I love playing and travelling with my kid and wife
