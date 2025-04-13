@@ -45,4 +45,4 @@ Before running the notebook, make sure the following tools/libraries are availab
 - (Optionally) Saving model and predictions to AWS S3
 
 ### Happy coding Guys!!!
-### I love Coding, Bowling, Cooking and Writing other than this I love playing and travelling with my kid and wife
+### 🐥👶 🌻🐕🏃🏻‍♂🏏🤸🏻‍♂🧘🏻‍♂🚿🍎🚇🏢📚💻🥗🥎🚶🏻‍♂🚇🍲🥛📱📚😴🐥
